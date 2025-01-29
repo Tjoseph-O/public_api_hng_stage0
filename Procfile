@@ -1,1 +1,1 @@
-web: gunicorn public_api.wsgi:application
+gunicorn public_api.wsgi:application
