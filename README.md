@@ -12,6 +12,7 @@ This is a Django-based API developed as part of the HNG Stage 0 Backend Task. Th
 3. [API Documentation](#api-documentation)
 4. [Testing the API](#testing-the-api)
 5. [Response Time Testing](#response-time-testing)
+6. [Backlinks](#backlinks)
 
 
 ---
@@ -61,7 +62,7 @@ cd your-repo
 
 API Documentation
 Endpoint
-GET https://stageonepublicapi.onrender.com/
+GET https://stageonepublicapi.onrender.com/api/
 
 Request
 No request body or parameters are required.
@@ -70,9 +71,9 @@ Response Format
 The API returns a JSON response with the following fields:
 
 {
-  "email": "your-email@example.com",
+  "email": "mrtemitopejoseph@gmail.com",
   "current_datetime": "2025-01-30T09:30:00Z",
-  "github_url": "https://github.com/yourusername/your-repo"
+  "github_url": "https://github.com/Tjoseph-O/public_api_hng_stage0"
 }
 
 Fields Description
@@ -86,7 +87,7 @@ github_url: The URL of the GitHub repository hosting the project's codebase.
 **Testing the API**
 4. Using a Browser
 Open your browser and navigate to:
-    http://127.0.0.1:8000/
+    http://127.0.0.1:8000/api/
 
 
 
@@ -96,21 +97,27 @@ To ensure the API has a fast response time (< 500ms), you can use tools like cur
 
 1. Using curl
 Run the following command to measure the response time:
-    curl -o /dev/null -s -w "Response Time: %{time_total}s\n" http://127.0.0.1:8000/
+    curl -o /dev/null -s -w "Response Time: %{time_total}s\n" http://127.0.0.1:8000/api/
     Response Time: 0.000340s
 
+### **Example Usage**
+You can test the API using `curl`:
+```bash
+curl https://stageonepublicapi.onrender.com/api/
+
+{
+  "email": "mrtemitopejoseph@gmail.com",
+  "current_datetime": "2025-01-29T00:02:04.561520+00:00",
+  "github_url": "https://github.com/Tjoseph-O/public_api_hng_stage0"
+}
 
 
 
-Backlinks
-HNG Python Developers
 
-HNG C# Developers
-
-HNG Golang Developers
-
-HNG PHP Developers
-
-HNG Java Developers
-
-HNG Node.js Developers
+## **Backlinks**
+- [HNG Python Developers](https://hng.tech/hire/python-developers)
+- [HNG C# Developers](https://hng.tech/hire/csharp-developers)
+- [HNG Golang Developers](https://hng.tech/hire/golang-developers)
+- [HNG PHP Developers](https://hng.tech/hire/php-developers)
+- [HNG Java Developers](https://hng.tech/hire/java-developers)
+- [HNG Node.js Developers](https://hng.tech/hire/nodejs-developers)
