@@ -11,9 +11,8 @@ This is a Django-based API developed as part of the HNG Stage 0 Backend Task. Th
 2. [Setup Instructions](#setup-instructions)
 3. [API Documentation](#api-documentation)
 4. [Testing the API](#testing-the-api)
-5. [Deployment](#deployment)
-6. [Response Time Testing](#response-time-testing)
-7. [Backlinks](#backlinks)
+5. [Response Time Testing](#response-time-testing)
+
 
 ---
 
@@ -62,7 +61,7 @@ cd your-repo
 
 API Documentation
 Endpoint
-GET /api/
+GET https://stageonepublicapi.onrender.com/
 
 Request
 No request body or parameters are required.
@@ -82,3 +81,20 @@ email: The registered email address used to sign up for the HNG12 Slack workspac
 current_datetime: The current datetime in ISO 8601 format (UTC).
 
 github_url: The URL of the GitHub repository hosting the project's codebase.
+
+
+**Testing the API**
+4. Using a Browser
+Open your browser and navigate to:
+    http://127.0.0.1:8000/
+
+
+
+
+Response Time Testing
+To ensure the API has a fast response time (< 500ms), you can use tools like curl, Postman, or Python's requests library.
+
+1. Using curl
+Run the following command to measure the response time:
+    curl -o /dev/null -s -w "Response Time: %{time_total}s\n" http://127.0.0.1:8000/
+    Response Time: 0.000340s
