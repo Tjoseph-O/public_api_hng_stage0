@@ -116,8 +116,3 @@ curl https://stageonepublicapi.onrender.com/api/
 
 ## **Backlinks**
 - [HNG Python Developers](https://hng.tech/hire/python-developers)
-- [HNG C# Developers](https://hng.tech/hire/csharp-developers)
-- [HNG Golang Developers](https://hng.tech/hire/golang-developers)
-- [HNG PHP Developers](https://hng.tech/hire/php-developers)
-- [HNG Java Developers](https://hng.tech/hire/java-developers)
-- [HNG Node.js Developers](https://hng.tech/hire/nodejs-developers)

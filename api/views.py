@@ -4,8 +4,8 @@ from datetime import datetime
 from datetime import timezone
 
 def get_info(request):
-    utc_datetime = datetime.now(timezone.utc)  # Ensure UTC
-    iso_format = utc_datetime.strftime("%Y-%m-%dT%H:%M:%S.%fZ") # Explicit Z
+    utc_datetime = datetime.now(timezone.utc)  
+    iso_format = utc_datetime.strftime("%Y-%m-%dT%H:%M:%S.%fZ") 
 
     data = {
         "email": "mrtemitopejoseph@gmail.com",
